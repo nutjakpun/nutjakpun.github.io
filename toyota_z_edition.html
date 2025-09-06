@@ -241,7 +241,7 @@
                 <img id="mainImage" src="image/f1.jpg" alt="Toyota Hilux Revo" class="main-image">
                 
                 <div class="thumbnail-grid">
-                    <img src="image/r1.jpg" alt="Rear View" class="thumbnail" onclick="changeMainImage(this, 'Rear View')">
+                    <img src="image/r1.jpg" alt="Rear View" class="thumbnail active" onclick="changeMainImage(this, 'Rear View')">
                     <img src="image/r2.jpg" alt="Rear View" class="thumbnail" onclick="changeMainImage(this, 'Rear View')">
                     <img src="image/r3.jpg" alt="Rear View" class="thumbnail" onclick="changeMainImage(this, 'Rear View')">
                     <img src="image/f1.jpg" alt="Front View" class="thumbnail active" onclick="changeMainImage(this, 'Front View')">
@@ -350,7 +350,7 @@
             // Change main image (in a real implementation, you would change to actual image URLs)
             const mainImage = document.getElementById('mainImage');
 
-            var image = document.getElementsByClassName("active");
+            var image = document.getElementsByClassName('thumbnail active');
             //image.src = "image1.jpg"
             
             // Create a placeholder for the description
