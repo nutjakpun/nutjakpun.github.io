@@ -231,7 +231,8 @@
     <div class="container">
         <div class="header">
             <h1>🚗 Toyota Hilux Revo Double Cab Z Edition</h1>
-            <p>รถกระบะสุดหรู พร้อมใช้งาน สภาพดีเยี่ยม</p>
+            <p>รถยังอยู่ในวารันตีศูนย์ TOYOTA 5 ปี หรือ 150,000 กิโล MODEL ปี2021 รถบ้านมือแรกจากป้ายแดง กระจังหน้าใหม่ หน้าหมูป่า ไม่สวยจริงไม่กล้าขาย กุญแจสำรอง อุปกรณ์ติดรถครบ ดูแลรักษาทุกระยะ เครื่อง/ช่วงล่าง/เกียร์สมบูรณ์ ภายในสะอาดเรียบร้อย 
+                FULL OPTION กระจกไฟฟ้าทั้งคัน เบรกABS AIRBAG จอDVDระบบสัมผัส บลูทูธ เชื่อมต่อ Apple CarPlay + Android Autoได้ ระบบ ECO / PWR ล้อแม็กซ์GR พร้อมยางใหม่ 4 เส้น ทุกจุดสมบูรณ์พร้อมใช้งาน</p>
             <div class="badge">🔥 Hot Deal!</div>
         </div>
 
@@ -240,10 +241,10 @@
                 <img id="mainImage" src="image/f1.jpg" alt="Toyota Hilux Revo" class="main-image">
                 
                 <div class="thumbnail-grid">
-                    <img src="image/r1.jpg" alt="Rear View" class="thumbnail active" onclick="changeMainImage(this, 'Rear View')">
-                    <img src="image/r2.jpg" alt="Rear View" class="thumbnail active" onclick="changeMainImage(this, 'Rear View')">
-                    <img src="image/r3.jpg" alt="Rear View" class="thumbnail active" onclick="changeMainImage(this, 'Rear View')">
-                    <img src="image/f1.jpg" alt="Front View" class="thumbnail" onclick="changeMainImage(this, 'Front View')">
+                    <img src="image/r1.jpg" alt="Rear View" class="thumbnail" onclick="changeMainImage(this, 'Rear View')">
+                    <img src="image/r2.jpg" alt="Rear View" class="thumbnail" onclick="changeMainImage(this, 'Rear View')">
+                    <img src="image/r3.jpg" alt="Rear View" class="thumbnail" onclick="changeMainImage(this, 'Rear View')">
+                    <img src="image/f1.jpg" alt="Front View" class="thumbnail active" onclick="changeMainImage(this, 'Front View')">
                     <img src="image/f2.jpg" alt="Front View" class="thumbnail" onclick="changeMainImage(this, 'Front View')">
                     <img src="image/f3.jpg" alt="Front View" class="thumbnail" onclick="changeMainImage(this, 'Front View')">
                     <img src="image/i1.jpg" alt="Interior" class="thumbnail" onclick="changeMainImage(this, 'Interior')">
@@ -348,6 +349,9 @@
             
             // Change main image (in a real implementation, you would change to actual image URLs)
             const mainImage = document.getElementById('mainImage');
+
+            var image = document.getElementsByClassName("thumbnail active");
+            //image.src = "image1.jpg"
             
             // Create a placeholder for the description
             const placeholderSvg = `data:image/svg+xml;base64,${btoa(`
@@ -358,7 +362,7 @@
                 </svg>
             `)}`;
             
-            mainImage.src = placeholderSvg;
+            mainImage.src = image.src;
         }
 
         function callDealer() {
